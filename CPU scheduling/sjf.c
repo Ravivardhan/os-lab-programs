@@ -48,15 +48,15 @@
     avg_wt=(float)total/n;      
     total=0;
  
-    printf("nProcesst    Burst Time    tWaiting TimetTurnaround Time");
+    printf("\nProcess\t    Burst Time    \tWaiting TimetTurnaround Time");
     for(i=0;i<n;i++)
     {
         tat[i]=bt[i]+wt[i];   
         total+=tat[i];
-        printf("np%dtt  %dtt    %dttt%d",p[i],bt[i],wt[i],tat[i]);
+        printf("\np%d\t\t  %d\t\t    %d\t\t\t%d",p[i],bt[i],wt[i],tat[i]);
     }
  
     avg_tat=(float)total/n;    
-    printf("nnAverage Waiting Time=%f",avg_wt);
-    printf("nAverage Turnaround Time=%fn",avg_tat);
+    printf("\n\nAverage Waiting Time=%f",avg_wt);
+    printf("\nAverage Turnaround Time=%f\n",avg_tat);
 }
