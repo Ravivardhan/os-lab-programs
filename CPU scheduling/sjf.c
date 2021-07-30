@@ -8,7 +8,7 @@
  
     printf("nEnter Burst Time:n");
     for(i=0;i<n;i++)
-    {
+    {  
         printf("p%d:",i+1);
         scanf("%d",&bt[i]);
         p[i]=i+1;         
